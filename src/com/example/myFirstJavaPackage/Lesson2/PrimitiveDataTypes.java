@@ -51,7 +51,9 @@ public class PrimitiveDataTypes {
         * 4) Before/after 0x, 0b
          */
 
-        System.out.println(a3);
+        double myVar = 12.0 / 5;
+
+        System.out.println(myVar);
 
     }
 }
