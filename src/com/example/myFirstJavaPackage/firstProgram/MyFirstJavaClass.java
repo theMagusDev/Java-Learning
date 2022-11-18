@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.Lesson1;
+package com.example.myFirstJavaPackage.firstProgram;
 
 public class MyFirstJavaClass {
 

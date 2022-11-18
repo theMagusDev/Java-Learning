@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.Lesson3;
+package com.example.myFirstJavaPackage.operators;
 
 public class LogicOperators {
 

@@ -1,13 +1,28 @@
-package com.example.myFirstJavaPackage.Lesson4;
+package com.example.myFirstJavaPackage.classesAndObjects;
 
 public class BankAccount {
-
     int id = 1; // instance's variable (because is used in multiple objects)
     String name; // instance's variable
     double balance; // instance's variable
+
+    void deposit(double amount) {
+        System.out.println("Balance replenishment: $" + balance + " -> $" + (balance + amount) + " (+$" + amount + ")");
+        balance += amount;
+    }
+
+    void withdraw(double amount) {
+        System.out.println("Cash withdrawal: $" + balance + " -> $" + (balance - amount) + " (-$" + amount + ")");
+        balance -= amount;
+    }
+
+    void getInfo() {
+        System.out.println("ID: " + id);
+        System.out.println("Owner name: " + name);
+        System.out.println("Balance: " + balance);
+    }
 }
 
-class BankAccountTest {
+class BankAccountProgram {
 
     public static void main(String[] args) {
 
@@ -17,16 +32,19 @@ class BankAccountTest {
 
         myAccount.id = 1;
         myAccount.name = "Yuriy";
-        myAccount.balance = 15.35;
+        myAccount.balance = 15.50;
 
         yourAccount.id = 2;
         yourAccount.name = "Ivan";
-        yourAccount.balance = 17.35;
+        yourAccount.balance = 17.00;
 
         hisAccount.id = 3;
         hisAccount.name = "Yarik";
-        hisAccount.balance = 19.35;
+        hisAccount.balance = 19.50;
 
-        System.out.println(hisAccount.name);
+        myAccount.deposit(57.25);
+        myAccount.deposit(23.35);
+        myAccount.withdraw(70);
+
     }
 }

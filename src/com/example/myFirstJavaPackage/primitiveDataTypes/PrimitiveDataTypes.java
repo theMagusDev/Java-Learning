@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.Lesson2;
+package com.example.myFirstJavaPackage.primitiveDataTypes;
 
 public class PrimitiveDataTypes {
 
