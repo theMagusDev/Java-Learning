@@ -6,7 +6,7 @@ public class Employee {
     int employeeAge;
     double employeeSalary;
     String employeeDepartment;
-    Employee(int id, String surname, int age, double salary, String department) {
+    public Employee(int id, String surname, int age, double salary, String department) {
         employeeId = id;
         employeeSurname = surname;
         employeeAge = age;
