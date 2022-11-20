@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.packages;
+package com.example.myFirstJavaPackage.packages.package1;
 
 public class FirstClass {
 

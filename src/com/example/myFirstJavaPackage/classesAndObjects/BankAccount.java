@@ -1,9 +1,11 @@
 package com.example.myFirstJavaPackage.classesAndObjects;
 
 public class BankAccount {
-    int id = 1; // instance's variable (because is used in multiple objects)
-    String name; // instance's variable
-    double balance; // instance's variable
+    int id = 1; // instance variable (because is used in multiple objects)
+    String name; // instance variable
+    double balance; // instance variable
+    // Note: instance variables are in all objects BankAccount,
+    // no matter does constructor assign values to them or not
 
     void deposit(double amount) {
         System.out.println("Balance replenishment: $" + balance + " -> $" + (balance + amount) + " (+$" + amount + ")");
