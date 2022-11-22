@@ -1,19 +1,19 @@
 package com.example.myFirstJavaPackage.variablesAndVisibility;
 
 public class Car {
-    String color; // instance variable. Is visible in Instances (objects)
-    String engine;
+    public String color; // instance variable. Is visible in Instances (objects)
+    public String engine;
     static int count; // static variable. Is visible in Class
     final int BASE_PRICE = 50000;
     final String DEFAULT_ENGINE = "V6";
 
-    Car(String _color, String _engine) {
+    public Car(String _color, String _engine) {
         count++;
         this.color = _color; // i.e. this object color = $color
         this.engine = _engine;
     }
 
-    Car(String color) {
+    public Car(String color) {
         this.color = color;
         // 'color' here is parameter var, not instance var
         // and 'this.color' is an instance var

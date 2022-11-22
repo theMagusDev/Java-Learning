@@ -6,24 +6,19 @@ public class BankAccount {
 // Task 1
 class Homework {
 
-    public static void main(String[] args) {
-
+    public static void createBankAccounts() {
         BankAccount bankAccount1 = new BankAccount();
         BankAccount bankAccount2 = new BankAccount();
-        BankAccount bankAccount3 = new BankAccount();
-        BankAccount bankAccount4 = new BankAccount();
-        BankAccount bankAccount5 = new BankAccount();
-        BankAccount bankAccount6 = new BankAccount();
-        BankAccount bankAccount7 = new BankAccount();
-        BankAccount bankAccount8 = new BankAccount();
+    }
 
-        bankAccount1 = null;
-        bankAccount2 = null;
-        bankAccount3 = null;
-        bankAccount4 = null;
-        bankAccount5 = null;
-        bankAccount6 = null;
+    public static void main(String[] args) {
+        BankAccount bankAccount = new BankAccount(); // 1 object created
+        createBankAccounts(); // 2 more objects created
+        createBankAccounts(); // 2 more objects created
+        BankAccount bankAccount1 = new BankAccount(); // 1 more object created
+        createBankAccounts(); // 2 more objects created
 
+        // 8 objects were created, but only 2 are alive
     }
 }
 
@@ -32,16 +27,16 @@ class Homework {
 class Test1{
     int a = 1;
     // static int a = 2;
-    // the line above causes an error, but here you should determine, will it be used or not (if not commented)
+    // uncomment the line above
 
-    static void abc(int a) {
+    void abc(int a) {
         System.out.println(a);
-        System.out.println(Test2.b);
+        System.out.println(this.a);
     }
 
     public static void main(String[] args) {
-
-        abc(5);
+        Test1 test1 = new Test1();
+        test1.abc(5);
     }
 }
 
@@ -81,8 +76,7 @@ class Test3{
 
     // Output #1:
     /*
-        3
-        1
+        Error.
     */
 
     // Output #2:

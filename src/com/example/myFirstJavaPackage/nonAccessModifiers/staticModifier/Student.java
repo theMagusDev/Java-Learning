@@ -1,28 +1,10 @@
 package com.example.myFirstJavaPackage.nonAccessModifiers.staticModifier;
 
-public class StaticModifier {
+public class Student {
 
-    public static void main(String[] args) {
-
-        Student student1 = new Student("Ivan", 1);
-        Student student2 = new Student("Peter", 4);
-        Student student3 = new Student("Maria", 2);
-
-        System.out.println(Student.counter); // Best practice
-        System.out.println(student1.counter); // Not recommended
-
-        // Conclusion: we can call Class's static methods
-        // without creating an instance from this Class
-
-        Student.printCount(); // Best practice
-        student1.printCount(); // Not recommended
-    }
-}
-
-class Student {
     String name; // instance variable
     int course; // instance variable
-    static int counter; // class variable
+    public static int counter; // class variable
 
     // What is a class variable:
     /*
@@ -53,10 +35,31 @@ class Student {
 
     static void incrementCourseStatic() {
         counter++;
-        //course++ -> Error: Non-static cannot be referenced from a static
+        // course++ -> Error: Non-static cannot be referenced from a static
         // But, if we create an object
         Student student = new Student("Nastya", 1);
         // We say: "This object 100% exists"
         student.course++;
+    }
+
+}
+
+class StudentProgram {
+
+    public static void main(String[] args) {
+
+        Student student1 = new Student("Ivan", 1);
+        Student student2 = new Student("Peter", 4);
+        Student student3 = new Student("Maria", 2);
+
+        System.out.println(Student.counter); // Best practice
+        System.out.println(student1.counter); // Not recommended
+
+        // Conclusion: we can call Class's static methods
+        // without creating an instance from this Class
+
+        Student.printCount(); // Best practice
+        student1.printCount(); // Not recommended
+
     }
 }
