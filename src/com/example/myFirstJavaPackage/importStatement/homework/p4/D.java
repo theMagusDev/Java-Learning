@@ -1,9 +1,9 @@
-package com.example.myFirstJavaPackage.importStatement.Homework.p4;
+package com.example.myFirstJavaPackage.importStatement.homework.p4;
 
-import com.example.myFirstJavaPackage.importStatement.Homework.p1.A;
-import com.example.myFirstJavaPackage.importStatement.Homework.p1.p2.p3.C;
-import com.example.myFirstJavaPackage.importStatement.Homework.p4.p5.E;
-import static com.example.myFirstJavaPackage.importStatement.Homework.p1.p2.B.*;
+import com.example.myFirstJavaPackage.importStatement.homework.p1.A;
+import com.example.myFirstJavaPackage.importStatement.homework.p1.p2.p3.C;
+import com.example.myFirstJavaPackage.importStatement.homework.p4.p5.E;
+import static com.example.myFirstJavaPackage.importStatement.homework.p1.p2.B.*;
 
 public class D {
 

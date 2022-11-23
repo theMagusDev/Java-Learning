@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.importStatement.Homework.p1.p2;
+package com.example.myFirstJavaPackage.importStatement.homework.p1.p2;
 
 public class B {
 
