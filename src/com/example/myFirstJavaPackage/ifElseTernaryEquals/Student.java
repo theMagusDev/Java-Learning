@@ -38,7 +38,7 @@ public class Student {
 
     public static void main(String[] args) {
 
-        Student student1 = new Student("Ivan", 3, 9.5);
+        Student student1 = new Student("Ivan", 1, 5.3);
         Student student2 = new Student("Peter", 1, 5.3);
 
         compareStudents(student1, student2);
