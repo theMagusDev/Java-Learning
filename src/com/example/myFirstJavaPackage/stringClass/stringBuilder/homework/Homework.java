@@ -1,8 +1,10 @@
 package com.example.myFirstJavaPackage.stringClass.stringBuilder.homework;
 
+import com.example.myFirstJavaPackage.arrays.Arrays;
+
 public class Homework {
 
-    static boolean areEqual(StringBuilder stringBuilder1, StringBuilder stringBuilder2) {
+    public static boolean areEqual(StringBuilder stringBuilder1, StringBuilder stringBuilder2) {
         return stringBuilder1.toString().equals(stringBuilder2.toString());
     }
 
