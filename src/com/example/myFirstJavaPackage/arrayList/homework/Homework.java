@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class Homework {
 
-    public static ArrayList abc(String ... array) {
+    public static ArrayList<String> abc(String ... array) {
 
         ArrayList<String> arrayList = new ArrayList<>();
         for (String element : array) {
