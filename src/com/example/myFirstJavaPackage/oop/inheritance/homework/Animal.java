@@ -2,10 +2,10 @@ package com.example.myFirstJavaPackage.oop.inheritance.homework;
 
 public class Animal {
 
-    Animal() {
+    public Animal() {
         System.out.println("I am animal");
     }
-    Animal(int eyes) {
+    public Animal(int eyes) {
         this.eyes = eyes;
     }
 

@@ -22,7 +22,7 @@ class Employee {
 }
 
 class Doctor extends Employee {
-    String spezialization;
+    String specialization;
 
     void cure() {
         System.out.println("Cure");

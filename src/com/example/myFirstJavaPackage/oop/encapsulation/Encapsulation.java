@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.oop;
+package com.example.myFirstJavaPackage.oop.encapsulation;
 
 public class Encapsulation {
 
