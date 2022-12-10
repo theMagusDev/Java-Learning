@@ -20,6 +20,17 @@ public class MethodOverloading {
         System.out.println();
     }
 
+    /** Note:
+    int printVar(String stringToPrint) {
+
+        System.out.println(stringToPrint);
+        System.out.println("Print String method was called.");
+        System.out.println();
+        return 5;
+    }
+     * Causes an error. Different return types only != overloading
+     */
+
     void printVar(String s, int a) {
         System.out.println("String: " + s + " int: " + a);
     }
