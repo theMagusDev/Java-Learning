@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.oop.abstractClassesAndMethods;
+package com.example.myFirstJavaPackage.oop.abstractClassesAndMethods.interfaces;
 
 public class Interfaces {
 
@@ -68,7 +68,7 @@ interface HelpAble {
     public abstract void firstHelp();
     // void firstHelp(); is the same
     void fightAFire(String tool);
-    // Note: All methods in interface are PUBLIC and ABSTRACT
+    // Note: All methods in interface are PUBLIC by default and always ABSTRACT
 }
 
 interface SwimAble {

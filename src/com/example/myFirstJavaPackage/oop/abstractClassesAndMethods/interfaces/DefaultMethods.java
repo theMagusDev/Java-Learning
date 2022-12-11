@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.oop.abstractClassesAndMethods;
+package com.example.myFirstJavaPackage.oop.abstractClassesAndMethods.interfaces;
 
 public class DefaultMethods {
 

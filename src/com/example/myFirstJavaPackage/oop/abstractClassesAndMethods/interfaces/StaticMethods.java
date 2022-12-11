@@ -1,15 +1,15 @@
-package com.example.myFirstJavaPackage.oop.abstractClassesAndMethods;
+package com.example.myFirstJavaPackage.oop.abstractClassesAndMethods.interfaces;
 
-public class StaticMethods implements I1 {
+public class StaticMethods implements Interf1 {
 
     public static void main(String[] args) {
 
         // StaticMethods.def(); Error: static methods are not inherited
-        I1.def(); // OK
+        Interf1.def(); // OK
     }
 }
 
-interface I1 {
+interface Interf1 {
 
     static void def() {
         System.out.println("Static method def");
