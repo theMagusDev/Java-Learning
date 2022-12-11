@@ -78,7 +78,7 @@ interface SwimAble {
     // Note: All variables in interface are PUBLIC FINAL STATIC
 }
 
-interface DiveAndHelpAble extends SwimAble, HelpAble { // Interface can extend interface
+interface DiveableAndHelpable extends SwimAble, HelpAble { // Interface can extend interface
     void dive();
 }
 

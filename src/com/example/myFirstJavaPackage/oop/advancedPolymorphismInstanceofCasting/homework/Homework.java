@@ -1,29 +1,75 @@
-package com.example.myFirstJavaPackage.oop.abstractClassesAndMethods.homework;
+package com.example.myFirstJavaPackage.oop.advancedPolymorphismInstanceofCasting.homework;
 
 public class Homework {
 
     public static void main(String[] args) {
 
         Swordfish swordfish = new Swordfish("Petya");
-        System.out.println(swordfish.name);
-        swordfish.swim();
-        swordfish.eat();
-        swordfish.sleep();
+        Penguin penguin = new Penguin("Pasha");
+        Lion lion = new Lion("Richard");
 
-        Speakable penguin = new Penguin("Pasha");
-        penguin.speak();
+        Speakable penguinSpeakable = new Penguin("Tolya");
+        Speakable lionSpeakable = new Lion("Rafael");
 
-        Animal lion = new Lion("Richard");
-        System.out.println(lion.name);
-        lion.eat();
-        lion.sleep();
+        Speakable[] speakables = {penguinSpeakable, lionSpeakable};
+        Animal[] animals = {swordfish, penguin, lion, new Mamont()};
 
-        Mammal lion1 = new Lion("Fedor");
-        System.out.println(lion1.name);
-        lion1.run();
-        lion1.eat();
-        lion1.sleep();
-        lion1.speak();
+        System.out.println("=== Speakables ===");
+        for (Speakable speakable : speakables) {
+            if (speakable instanceof Penguin) {
+                System.out.println(((Penguin)speakable).name);
+                speakable.speak();
+                ((Penguin)speakable).fly();
+                ((Penguin)speakable).eat();
+                ((Penguin)speakable).sleep();
+            } else if (speakable instanceof Lion) {
+                System.out.println(((Lion)speakable).name);
+                speakable.speak();
+                ((Lion)speakable).run();
+                ((Lion)speakable).eat();
+                ((Lion)speakable).sleep();
+            } else {
+                System.out.println("This animal is not speakable");
+            }
+        }
+
+        System.out.println("\n=== Animals ===");
+        for (Animal animal : animals) {
+            if (animal instanceof Swordfish) {
+                System.out.println(animal.name);
+                animal.eat();
+                animal.sleep();
+                ((Swordfish)animal).swim();
+            } else if (animal instanceof Penguin) {
+                System.out.println(animal.name);
+                animal.eat();
+                animal.sleep();
+                ((Penguin)animal).speak();
+                ((Penguin)animal).fly();
+            } else if (animal instanceof Lion) {
+                System.out.println(animal.name);
+                animal.eat();
+                animal.sleep();
+                ((Lion)animal).run();
+            } else {
+                System.out.println("Unknown animal: " + animal.getClass() + " with name: " + animal.name);
+            }
+        }
+    }
+}
+// Some unknown animal
+class Mamont extends Animal {
+    Mamont() {
+        super("Mamont name");
+    }
+    @Override
+    void eat() {
+        System.out.println("Mamonts eat a grass");
+    }
+
+    @Override
+    void sleep() {
+        System.out.println("Mamonts sleep so long!");
     }
 }
 
