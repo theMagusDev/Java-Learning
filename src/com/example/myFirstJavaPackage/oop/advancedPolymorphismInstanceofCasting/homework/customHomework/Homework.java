@@ -7,9 +7,11 @@ public class Homework {
         Swordfish swordfish = new Swordfish("Petya1");
         Fish swordfishFish = new Swordfish("Petya2");
         Animal swordfishAnimal = new Swordfish("Petya3");
+
         Penguin penguin = new Penguin("Pasha1");
         Bird penguinBird = new Penguin("Pasha2");
         Animal penguinAnimal = new Penguin("Pasha3");
+
         Lion lion = new Lion("Richard1");
         Mammal lionMammal = new Lion("Richard2");
         Animal lionAnimal = new Lion("Richard3");
@@ -17,7 +19,7 @@ public class Homework {
         Speakable penguinSpeakable = new Penguin("Tolya");
         Speakable lionSpeakable = new Lion("Rafael");
 
-        Speakable[] speakables = {penguinSpeakable, lionSpeakable};
+        Speakable[] speakables = {penguinSpeakable, lionSpeakable, penguin, penguinBird, lion, lionMammal};
         Animal[] animals = {swordfish, swordfishFish, swordfishAnimal, penguin, penguinBird, penguinAnimal, lion, lionMammal, lionAnimal, new Mamont()};
 
         System.out.println("=== Speakables ===");
