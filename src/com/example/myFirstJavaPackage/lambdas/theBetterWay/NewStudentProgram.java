@@ -15,9 +15,9 @@ public class NewStudentProgram {
         arrayList.add(student3);
 
         System.out.println("Students with grade > 8.3:");
-        Student.testStudents(arrayList, new FindNewStudentsOverGrade());
+        Student.testStudents(arrayList, new FindStudentsOverGrade());
         System.out.println("Students with grade < 8.3:");
-        Student.testStudents(arrayList, new FindNewStudentsUnderGrade());
+        Student.testStudents(arrayList, new FindStudentsUnderGrade());
     }
 }
 
@@ -46,10 +46,10 @@ class Student {
                 + ", avgGrade: " + student.avgGrade);
     }
 
-    public static void testStudents(ArrayList<Student> studentArrayList, NewStudentChecks newStudentChecks) {
+    public static void testStudents(ArrayList<Student> studentArrayList, StudentChecks studentChecks) {
 
         for (Student student : studentArrayList) {
-            if (newStudentChecks.testStudent(student)) {
+            if (studentChecks.testStudent(student)) {
                 printStudent(student);
             }
         }
@@ -57,17 +57,17 @@ class Student {
     }
 }
 
-interface NewStudentChecks {
+interface StudentChecks {
     boolean testStudent(Student student);
 }
 
-class FindNewStudentsOverGrade implements NewStudentChecks {
+class FindStudentsOverGrade implements StudentChecks {
     public boolean testStudent(Student student) {
         return student.avgGrade > 8.3;
     }
 }
 
-class FindNewStudentsUnderGrade implements NewStudentChecks {
+class FindStudentsUnderGrade implements StudentChecks {
     public boolean testStudent(Student student) {
         return student.avgGrade < 8.3;
     }

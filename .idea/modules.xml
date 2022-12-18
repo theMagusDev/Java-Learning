@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ExampleModule/ExampleModule.iml" filepath="$PROJECT_DIR$/../ExampleModule/ExampleModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ModulesInJavaExample/ModulesInJavaExample.iml" filepath="$PROJECT_DIR$/../ModulesInJavaExample/ModulesInJavaExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyFirstJavaProject.iml" filepath="$PROJECT_DIR$/MyFirstJavaProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ModulesInJavaExample/myModule/myModule.iml" filepath="$PROJECT_DIR$/../ModulesInJavaExample/myModule/myModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ModulesInJavaExample/myModule2/myModule2.iml" filepath="$PROJECT_DIR$/../ModulesInJavaExample/myModule2/myModule2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ModulesInJavaExample/myModule3/myModule3.iml" filepath="$PROJECT_DIR$/../ModulesInJavaExample/myModule3/myModule3.iml" />
     </modules>
   </component>
 </project>
