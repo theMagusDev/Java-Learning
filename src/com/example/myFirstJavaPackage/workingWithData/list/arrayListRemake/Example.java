@@ -1,8 +1,7 @@
-package com.example.advancedJava.collections.p2ArrayList;
+package com.example.myFirstJavaPackage.workingWithData.list.arrayListRemake;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Example {
 
