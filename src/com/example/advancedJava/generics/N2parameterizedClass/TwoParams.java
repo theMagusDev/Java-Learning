@@ -1,7 +1,7 @@
 package com.example.advancedJava.generics.N2parameterizedClass;
 
-import com.example.myFirstJavaPackage.methodsAndConstructor.Employee;
-import com.example.myFirstJavaPackage.variablesAndVisibility.Car;
+import com.example.myFirstJavaPackage.classes.methodsAndConstructor.Employee;
+import com.example.myFirstJavaPackage.classes.variablesAndVisibility.Car;
 
 class Pair <V1, V2> {
     private V1 value1;
