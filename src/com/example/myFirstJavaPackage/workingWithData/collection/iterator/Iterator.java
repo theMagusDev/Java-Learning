@@ -1,9 +1,8 @@
-package com.example.myFirstJavaPackage.workingWithData.iterator;
+package com.example.myFirstJavaPackage.workingWithData.collection.iterator;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
-public class Example {
+public class Iterator {
 
     public static void main(String[] args) {
 
@@ -12,7 +11,7 @@ public class Example {
         students.add("Mariya");
         students.add("Ivan");
 
-        Iterator<String> iterator = students.iterator();
+        java.util.Iterator<String> iterator = students.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next()); // moves iterator on the next element.
         }
