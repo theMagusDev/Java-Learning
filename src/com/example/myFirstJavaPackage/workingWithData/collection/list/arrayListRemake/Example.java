@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.workingWithData.list.arrayListRemake;
+package com.example.myFirstJavaPackage.workingWithData.collection.list.arrayListRemake;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,7 @@ public class Example {
         System.out.println(students);
 
         // Как работает remove(Object o):
-        // 1) Он ищет в ArrayList переданный элемент
+        // 1) Он ищет в ArrayList переданный элемент (сравнивая при помощи equals переданного объекта)
         // 2) Сохраняет его индекс
         // 3) Удаляет через индекс
 

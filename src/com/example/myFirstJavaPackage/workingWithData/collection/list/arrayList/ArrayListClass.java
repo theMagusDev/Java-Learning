@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.workingWithData.list.arrayList;
+package com.example.myFirstJavaPackage.workingWithData.collection.list.arrayList;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;

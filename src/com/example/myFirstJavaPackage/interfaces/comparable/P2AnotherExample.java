@@ -26,7 +26,7 @@ public class P2AnotherExample {
          */
 
 //      Collections.sort(employees);
-        /* Error: reason: Employee does not conform to Comparable<? super T>
+        /* Error: Employee does not conform to Comparable<? super T>
         From Collections.java:
          public static <T extends Comparable<? super T>> void sort(List<T> list) {
              list.sort(null);

@@ -2,8 +2,9 @@ package com.example.myFirstJavaPackage.workingWithData.collection.iterator;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
-public class ListIterator {
+public class ListIteratorExample {
 
     public static void main(String[] args) {
 
@@ -14,8 +15,8 @@ public class ListIterator {
             characterList.add(ch);
         }
 
-        java.util.ListIterator<Character> listIterator = characterList.listIterator(/*start = 0 by default*/);
-        java.util.ListIterator<Character> reverseListIterator = characterList.listIterator(characterList.size());
+        ListIterator<Character> listIterator = characterList.listIterator(/*start = 0 by default*/);
+        ListIterator<Character> reverseListIterator = characterList.listIterator(characterList.size());
         boolean isPalindrome = true;
         while (listIterator.hasNext() && reverseListIterator.hasPrevious()) {
             if (listIterator.next() != reverseListIterator.previous()) {
