@@ -2,6 +2,13 @@ package com.example.myFirstJavaPackage.other.generics;
 
 import java.util.ArrayList;
 
+class GenericMethod {
+
+    public static <T> T getSecondElement(ArrayList<T> arrayList) {
+        return arrayList.get(1);
+    }
+}
+
 public class Program2 {
 
     public static void main(String[] args) {
@@ -31,9 +38,4 @@ public class Program2 {
     }
 }
 
-class GenericMethod {
 
-    public static <T> T getSecondElement(ArrayList<T> arrayList) {
-        return arrayList.get(1);
-    }
-}

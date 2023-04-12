@@ -1,33 +1,5 @@
 package com.example.myFirstJavaPackage.other.generics;
 
-public class GenericsAndMethodOverloading {
-
-    public static void main(String[] args) {
-
-        Info<String> name = new Info<>("Yuriy");
-        System.out.println(name);
-        Info<Integer> age = new Info<>(17);
-        System.out.println(age);
-        Integer myAge = age.getValue();
-        String myName = name.getValue();
-    }
-
-    /*
-
-    public void abc(Info<String> info) {
-        String s = info.getValue();
-    }
-
-    public void abc(Info<Integer> info) {
-        Integer s = info.getValue();
-    }
-
-    Error: 'abc(Info<String>)' clashes with 'abc(Info<Integer>)'; both methods have same erasure
-
-    Why? Because RunTime will not see these generics, so it won't be able to determine which method to call.
-    */
-}
-
 class Info<T> {
     private final T value;
     public Info(T value) {
@@ -46,6 +18,7 @@ class Parent {
 
     public void abc(Info<String> info) {
         String s = info.getValue();
+        System.out.println(s);
     }
 }
 
@@ -59,4 +32,25 @@ class Child extends Parent {
     there might appear some problems while casting
     */
 }
+
+public class GenericsAndMethodOverloading {
+
+    /*
+
+    public void abc(Info<String> info) {
+        String s = info.getValue();
+    }
+
+    public void abc(Info<Integer> info) {
+        Integer s = info.getValue();
+    }
+
+    Error: 'abc(Info<String>)' clashes with 'abc(Info<Integer>)'; both methods have same erasure
+
+    Why? Because RunTime will not see these generics, so it won't be able to determine which method to call.
+
+    */
+}
+
+
 
