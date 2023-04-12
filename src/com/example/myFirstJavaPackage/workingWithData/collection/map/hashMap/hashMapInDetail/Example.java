@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.classes.hashCodeAndEquals;
+package com.example.myFirstJavaPackage.workingWithData.collection.map.hashMap.hashMapInDetail;
 
 /* Theory
 HashMap сравнивает объекты СНАЧАЛА по hashCode(), а ПОТОМ ещё по equals(), т.к. hashCode() работает БЫСТРЕЕ, а equals() для того, чтобы полностью убедиться.
@@ -29,7 +29,7 @@ public class Example {
         System.out.println(studentsJournal);
         // {Student{name='Zaur', surname='Tregulov', course=3}=7.5, Student{name='Ivan', surname='Ivanov', course=3}=9.3, Student{name='Peter', surname='Bondarenko', course=3}=4.7}
 
-        // Пришёл како-то студент
+        // Пришёл какой-то студент
         Student student4 = new Student("Zaur", "Tregulov", 3);
         boolean isOurStudent = studentsJournal.containsKey(student4);
         System.out.println(isOurStudent);

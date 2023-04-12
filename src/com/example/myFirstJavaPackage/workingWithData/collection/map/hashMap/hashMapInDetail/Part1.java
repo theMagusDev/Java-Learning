@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.classes.hashCodeAndEquals.hashMapInDetail;
+package com.example.myFirstJavaPackage.workingWithData.collection.map.hashMap.hashMapInDetail;
 
 /*
 Хэширование - преобразование любого объекта с помощью метода hashCode() в int.
@@ -78,7 +78,7 @@ map.put(student1, 7.5)
 
 // Пусть hashCode = 356
 // Пусть вычислился index = 2
-// [[], [], Node<student1, 7.5>(hash=356, key=st1, value=7.5, next=null), [], ...]
+// [[], [], [Node<student1, 7.5>(hash=356, key=st1, value=7.5, next=null)], [], ...]
 
 map.put(student2, 5.3)
 
@@ -94,7 +94,7 @@ map.put(student2, 5.3)
 // Как работает hashMap.get(): //
 
 1) Вычисляется его hashCode
-2) Вычисляется его index по hashCode'у (где бы он находился, если бы мы его добавляли)
+2) Вычисляется его index по hashCode'у (где бы он находился, если мы его добавляли)
 3) Находим LinkedList по этому index'у.
 4) Идёт проверка: сначала по hashCode'у, потом по equals'у КАЖДОГО элемента LinkedList'а.
 

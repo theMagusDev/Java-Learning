@@ -9,6 +9,11 @@ package com.example.myFirstJavaPackage.workingWithData.collection.map.hashMap;
 КЛЮЧИ должны быть УНИКАЛЬНЫМИ (иначе новый перезапишет старый), могут быть null.
 ЗНАЧЕНИЯ могут повторяться, могут быть null.
 
+КЛЮЧИ должны быть immutable.
+Иначе, если их изменить, они получат другой hashCode, и мы по новому hashCode уже не сможем найти этот ключ в hashMap,
+т.к. проверяются в первую очередь хэши, а они разные у старого объекта и у изменённого.
+Поэтому, например, класс должен быть final, его поля - тоже final и желательно private.
+
 hashMap.put(KEY<K>, VALUE<V>) - добавить элемент
 hashMap.putIfAbsent(KEY<K>, VALUE<V>) - добавить элемент, если такого ещё нет
 hashMap.get(KEY<K>) - вывести элемент
