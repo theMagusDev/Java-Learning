@@ -18,7 +18,7 @@ hashMap.put(KEY<K>, VALUE<V>) - добавить элемент
 hashMap.putIfAbsent(KEY<K>, VALUE<V>) - добавить элемент, если такого ещё нет
 hashMap.get(KEY<K>) - вывести элемент
 hashMap.remove(KEY<K>) - удалить элемент
-hashMap.containsValue(KEY<K>) - имеется ли такой KEY
+hashMap.containsKey(KEY<K>) - имеется ли такой KEY
 hashMap.containsValue(VALUE<V>) - имеется ли такой VALUE
 hashMap.keySet() - вернуть Set всех ключей (его тип (самого, не элементов!) - KeySet (подкласс HashMp))
 hashMap.values() - вернуть Set всех значений
@@ -40,7 +40,8 @@ public class Example {
         passports.put(510560, "Mariya Sidorova");
         passports.put(530609, "Nikolay Petrov");
 
-        System.out.println(passports.keySet().getClass());
+        System.out.println(passports);
+        // {510560=Mariya Sidorova, 305901=Ivan Ivanov, 530609=Nikolay Petrov, 507609=Zaur Tregullov}
 
     }
 }

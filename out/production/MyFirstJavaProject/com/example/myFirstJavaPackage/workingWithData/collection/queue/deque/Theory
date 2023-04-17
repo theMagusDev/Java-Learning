@@ -1,0 +1,6 @@
+Deque - double ended queue.
+Этот интерфейс определяет поведение ДВУНАПРАВЛЕННОЙ очереди.
+Т.е. можем работать и с началом, и с концом очереди.
+Следует обоим принципам: и FIFO, и LIFO
+FIFO - first in first out
+LIFO - last in first out
