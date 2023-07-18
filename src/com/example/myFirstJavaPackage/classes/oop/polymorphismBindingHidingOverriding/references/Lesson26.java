@@ -5,7 +5,7 @@ public class Lesson26 {
     public Object abc() {
         return new Doctor(); // OK.
         // Why? Doctor is a subclass and the Object is super class
-        // Every Doctor is an Object, so error here.
+        // Every Doctor is an Object, so no error here.
     }
 
     /* BUT Error:

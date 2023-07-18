@@ -1,4 +1,4 @@
-package com.example.myFirstJavaPackage.classes.nestedClasses.innerClass;
+package com.example.myFirstJavaPackage.classes.nestedClasses.localInnerClass;
 
 public class LocalInner2 {
 

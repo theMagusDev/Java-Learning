@@ -42,7 +42,7 @@ public class Casting {
         ((Driver)employeeDriver).drive(); // OK
 
         // ===================== Downcasting (objects) ======================== //
-        /* It is prohibited in Java! Objects can not be downcasted. Remember this. */
+        /* It is prohibited in Java! Objects can not be downcasted (but compiler ignores this) */
 
         // ===================== Upcasting (variables) ======================== //
         Employee employeeDoctor1 = new Doctor();
