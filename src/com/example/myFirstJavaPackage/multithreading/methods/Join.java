@@ -12,7 +12,7 @@ public class Join {
 
         // Not we want main thread to wait until thread1 and thread2 will execute their code:
 
-        thread1.join(); // current (main) thread will wait until given thread (thread1) will execute
+        thread1.join(); // current (main) thread will wait until given thread (thread1) execute
         thread2.join();
 
         System.out.println("End");
@@ -40,9 +40,6 @@ public class Join {
          Thread-1 thread; i = 10
          End
         */
-
-        // Why 'End' was printed first? Because 2 other threads split from main thread
-        // and 3 threads execute separately.
     }
 }
 
